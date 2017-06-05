@@ -45,7 +45,8 @@ gulp.task('html', function(){
 gulp.task('plugins-js', function(){
 	gulp.src([
 		'bower_components/jquery/dist/jquery.js',
-		'bower_components/modernizr/modernizr.js'
+		'bower_components/modernizr/modernizr.js',
+		'bower_components/bootstrap/dist/js/bootstrap.min.js'
 		])
 	.pipe(concat('vendor.min.js'))
 	.pipe(uglify())
