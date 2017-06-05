@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Brand</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Ventas <span class="sr-only">(current)</span></a></li>
+						<li><a href="#">Clientes</a></li>
+						<li><a href="#">Categorias</a></li>
+						<li><a href="#">Artesanos</a></li>
+						<li><a href="#">Productos</a></li>
+						<li><a href="#">Galería</a></li>
+						<li><a href="#">Videos</a></li>
+						<li><a href="#">Pedidos</a></li>
+						<li><a href="#">Tienda</a></li>
+						<li><a href="#">Correos</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Salir</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container" id="clientes">
+		<ul class="nav nav-pills">
+			<li class="active"><a href="#">Clientes <span class="badge">42</span></a></li>
+			<li><a href="#">Nuevo Cliente <span class="badge"></span></a></li>
+			<li><a href="#">Direcciones <span class="badge"></span></a></li>
+		</ul>
+
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">Clientes</h3>
+			</div>
+			<div class="panel-body">
+				<div class="table-responsive">
+					<table class="table table-responsive table-striped table-hover ">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Nombre</th>
+								<th>Email</th>
+								<th>Teléfono</th>
+								<th>Direcciones</th>
+								<th>Editar</th>
+								<th>Activo</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Column content</td>
+								<td>Column content</td>
+								<td>Column content</td>
+								<td>Column content</td>
+								<td>Column content</td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Column content</td>
+								<td>Column content</td>
+								<td>Column content</td>
+								<td>Column content</td>
+								<td>Column content</td>
+								<td><input type="checkbox"></td>
+							</tr>
+						</tbody>
+					</table> 
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">Agregar</h3>
+			</div>
+			<div class="panel-body"> 
+				<form class="form-horizontal">
+					<fieldset>
+						<div class="form-group">
+							<label for="inputName" class="col-lg-2 control-label">Nombre</label>
+							<div class="col-lg-3">
+								<input type="text" class="form-control" id="inputName" name="name" placeholder="Nombre completo">
+							</div>
+
+							<label for="inputEmail" class="col-lg-2 control-label">Email</label>
+							<div class="col-lg-3">
+								<input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPhone" class="col-lg-2 control-label">Teléfono</label>
+							<div class="col-lg-3">
+								<input type="text" class="form-control" id="inputPhone" name="email" placeholder="Teléfono">
+							</div>
+
+							<label for="inputPassword" class="col-lg-2 control-label">Password</label>
+							<div class="col-lg-3">
+								<input type="password" class="form-control" id="inputPassword" name="password" placeholder="Password">
+							</div>
+						</div>
+						<div class="form-group">
+							
+						</div>
+						<a href="#" class="btn btn-default col-lg-offset-11">Guardar</a>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">Agregar dirección</h3>
+			</div>
+			<div class="panel-body"> 
+				<form class="form-horizontal">
+					<fieldset>
+						<div class="form-group">
+							<label for="inputName" class="col-lg-2 control-label">Nombre</label>
+							<div class="col-lg-3">
+								<input type="text" class="form-control" id="inputName" name="name" disabled="disabled" placeholder="Nombre completo">
+							</div>
+							<label for="inputEmail" class="col-lg-2 control-label">Email</label>
+							<div class="col-lg-3">
+								<input type="text" class="form-control" id="inputEmail" name="email" disabled="disabled" placeholder="Email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputAddress1" class="col-lg-2 control-label">Calle</label>
+							<div class="col-lg-3">
+								<input type="text" class="form-control" id="inputAddress1" name="address1" placeholder="Calle">
+							</div>
+
+							<label for="inputNumber" class="col-lg-2 control-label">Número</label>
+							<div class="col-lg-3">
+								<input type="text" class="form-control" id="inputNumber" name="number" placeholder="Número">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputAddress2" class="col-lg-2 control-label">Colonia/Delegación</label>
+							<div class="col-lg-3">
+								<input type="text" class="form-control" id="inputAddress2" name="address2" placeholder="Colonia/Delegación">
+							</div>
+							<label for="inputZip" class="col-lg-2 control-label">CP</label>
+							<div class="col-lg-3">
+								<input type="text" class="form-control" id="inputZip" name="zip" placeholder="Teléfono">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputCity" class="col-lg-2 control-label">Ciudad</label>
+							<div class="col-lg-3">
+								<input type="text" class="form-control" id="inputCity" name="city" placeholder="Ciudad">
+							</div>
+
+							<label for="inputState" class="col-lg-2 control-label">Estado</label>
+							<div class="col-lg-3">
+								<input type="text" class="form-control" id="inputState" name="state" placeholder="Estado">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputCountry" class="col-lg-2 control-label">País</label>
+							<div class="col-lg-3">
+								<input type="text" class="form-control" id="inputCountry" name="country" placeholder="País">
+							</div>
+						</div>
+						<a href="#" class="btn btn-default col-lg-offset-11">Guardar</a>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+
+
+	</main>
+
+	<main class="container" id="artesanos">
+		<ul class="nav nav-pills">
+			<li class="active"><a href="#">Artesanos <span class="badge">42</span></a></li>
+			<li><a href="#">Nuevo Artesano <span class="badge"></span></a></li>
+		</ul>
+
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">Artesanos</h3>
+			</div>
+			<div class="panel-body">
+				<div class="table-responsive">
+					<table class="table table-responsive table-striped table-hover ">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Nombre</th>
+								<th>Email</th>
+								<th>Teléfono</th>
+								<th>Productos</th>
+								<th>Editar</th>
+								<th>Activo</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Column content</td>
+								<td>Column content</td>
+								<td>Column content</td>
+								<td>Column content</td>
+								<td>Column content</td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Column content</td>
+								<td>Column content</td>
+								<td>Column content</td>
+								<td>Column content</td>
+								<td>Column content</td>
+								<td><input type="checkbox"></td>
+							</tr>
+						</tbody>
+					</table> 
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">Agregar</h3>
+			</div>
+			<div class="panel-body"> 
+				<form class="form-horizontal">
+					<fieldset>
+						<div class="form-group">
+							<label for="inputName" class="col-lg-2 control-label">Nombre</label>
+							<div class="col-lg-3">
+								<input type="text" class="form-control" id="inputName" name="name" placeholder="Nombre completo">
+							</div>
+
+							<label for="inputPhoto" class="col-lg-2 control-label">Fotografía</label>
+							<div class="col-lg-3">
+								<input type="file" class="form-control" id="inputPhoto" name="name" placeholder="Foto">
+							</div>
+
+							
+						</div>
+						<div class="form-group">
+							<label for="inputEmail" class="col-lg-2 control-label">Email</label>
+							<div class="col-lg-3">
+								<input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email">
+							</div>
+
+							<label for="inputPhone" class="col-lg-2 control-label">Teléfono</label>
+							<div class="col-lg-3">
+								<input type="text" class="form-control" id="inputPhone" name="email" placeholder="Teléfono">
+							</div>
+						</div>
+						<div class="form-group">
+							
+						</div>
+						<a href="#" class="btn btn-default col-lg-offset-11">Guardar</a>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</main>
+	<script src="https://use.fontawesome.com/be7e763425.js"></script>
+</body>
+</html>
